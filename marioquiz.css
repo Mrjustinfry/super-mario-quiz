@@ -1,0 +1,290 @@
+* {
+  text-align: center;
+  font-family: 'VT323', monospace;
+}
+
+html {
+  background: url("http://kuribo64.net/get.php?id=KcLnwHvMJUlj3NPG") repeat;
+}
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+legend {
+  font-size: 1.7em;
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  font-size: 1.7em;
+  letter-spacing: 0.05em;
+}
+
+.corAns {
+  color: red;
+}
+
+.box,
+.questionBox,
+.startPage,
+.answerBoxCorrect,
+.answerBoxWrong, {
+  height: auto;
+  width: auto;
+  margin: auto;
+  padding: 30px;
+}
+
+.questionBox, .startPage {
+  background: rgba(255, 255, 255, 0.7);
+  height: auto;
+  padding-bottom: 20px;
+  margin-bottom: 5%;
+  border-radius: 8px;
+}
+
+.qHead {
+  color: red;
+  font-size: 1.8em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 1.05em;
+  border-bottom: 1px solid black;
+}
+
+.answerBoxCorrect {
+  background: rgba(247, 3, 3, 0.7);
+  height: auto;
+  margin: auto;
+  padding-bottom: 20px;
+  border-radius: 8px;
+}
+
+.answerBoxWrong {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  height: auto;
+  padding-bottom: 20px;
+  border-radius: 8px;
+}
+
+.finalPageOne {
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.finalPageTwo {
+  background: rgba(255, 255, 255, 0.7);
+  height: auto;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.finalPageThree {
+  background: rgb(252, 157, 244, 0.7);
+  height: auto;
+  padding-bottom: 20px;
+  padding-top:20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.questionBox {
+  display: none;
+}
+
+.x-sml {
+  height: 25px;
+  width: 25px;
+}
+
+.sml {
+  height: 100px;
+  width: 100px;
+}
+
+.med {
+  height: 200px;
+  width: auto;
+}
+
+.headContainer {
+  padding: 30px 0;
+  position: fixed;
+  top: 10px;
+}
+
+.toadScore {
+  font-size: 1.4em;
+  border: 5px solid black;
+  max-width: 250px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.peachScore {
+  font-size: 1.4em;
+  border: 5px solid rgb(250, 100, 187);
+  max-width: 250px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bowserScore {
+  font-size: 1.4em;
+  border: 5px solid white;
+  max-width: 250px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.scoreContainer {
+  font-size: 1.2em;
+  list-style: none;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  padding: 3px; 
+  text-shadow: rgb(128, 128, 128) 0px 0px 10px;
+}
+
+.scoreTotalF {
+  vertical-align: super;
+}
+
+.response {
+  padding-top: 10px;
+  font-size: 2.5em;
+}
+
+.fBack {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  //padding: 1.2em;
+}
+
+.fBackF {
+  font-size: 1.3em;
+}
+
+.aChoice {
+  font-size: 115%;
+  text-indent: 1.3em;
+}
+
+.easterEggBox { 
+  margin: 0;
+  padding: 5px;
+  position: absolute;
+  top: 0px;
+  left: 0px;  
+  float: left;
+}
+
+.easterEggBox:hover {
+  cursor: pointer;
+}
+
+button {
+  font-size: 1.1em;
+  border-radius: 20px;
+  height: 40px;
+  width: 120px;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 2px 5px;
+  -moz-box-shadow: 0px 2px 5px;
+  -webkit-box-shadow: 0px 2px 5px; 
+}
+
+.startBtn, .answerBtn, .restartBtn {
+  background: red;
+  border: 2px solid darkred;
+}
+
+.correctButton, .toadBtn {
+  color: white;
+  background: blue;
+  border: 2px solid darkblue;
+}
+
+.wrongButton, .boswerBtn {
+  color: white;
+  background: black;
+  border: 2px solid grey;
+}
+
+.peachBtn {
+  background: rgb(252, 157, 230);
+  border: 2px solid rgb(252, 60, 207);
+}
+
+button:focus {
+ outline: 0;
+}
+
+button:active {
+  transform: translateY(4px);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+label {
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+label:hover, label:focus {
+  background-color: rgba(253, 83, 83, 0.425);
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+fieldset {
+  border: none;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid rgba(253, 83, 83, 0.425);
+  width: auto;
+  height: auto;
+  transition: 0.5s all ease-in-out;
+  outline: none;
+  position: relative;
+}
+
+input:checked {
+  border: 10px solid red;
+  border-radius: 50%;
+  margin-left: 35%;
+}
+
+input[type=radio] {
+  flex: 0 0 auto;
+}
