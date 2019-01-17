@@ -73,7 +73,7 @@ function answerCorrect() {
       <div class="col-12">
         <section class="answerBoxCorrect" role="region">
         <h1 class="response">Wahoo!</h1>
-        <img src="mario.jpg" alt="Mario" class="med" />
+        <img src="mario.png" alt="Mario" class="med" />
         <p class="fBack"><span>${STORE[questionNum].correctAnswer}</span> is correct!</p>
         <button class="nextBtn correctButton" role="button">Continue</button>
         </section>

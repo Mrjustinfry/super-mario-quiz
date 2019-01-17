@@ -61,7 +61,7 @@ const easterEggs = [
     src: `<img src="leaf.png" alt="tanooki" class="sml easterEgg" />`
   },
   {
-    src: `<img src="propeller.jpg" alt="heli-mushroom" class="sml easterEgg" />`
+    src: `<img src="propeller.png" alt="heli-mushroom" class="sml easterEgg" />`
   },
   {
     src: `<img src="penguin.png" alt="penguin" class="sml easterEgg" />`
