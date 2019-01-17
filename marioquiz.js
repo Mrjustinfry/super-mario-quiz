@@ -39,10 +39,10 @@ function createQuestion() {
         $(`.scoreContainer`).css('display','block');
   } else {
     finalScore();
-  } 
+  }
 }};
 
-//removes start page and displayed questionBox 
+//removes start page and displayed questionBox
 function startQuiz() {
   $('.box').on('click', '.startBtn', function (e) {
     e.preventDefault();
@@ -73,7 +73,7 @@ function answerCorrect() {
       <div class="col-12">
         <section class="answerBoxCorrect" role="region">
         <h1 class="response">Wahoo!</h1>
-        <img src="http://www.stickpng.com/assets/images/584df3956a5ae41a83ddee07.png" alt="Mario" class="med" />
+        <img src="mario.jpg" alt="Mario" class="med" />
         <p class="fBack"><span>${STORE[questionNum].correctAnswer}</span> is correct!</p>
         <button class="nextBtn correctButton" role="button">Continue</button>
         </section>
@@ -90,7 +90,7 @@ function answerWrong() {
       <div class="col-12">
         <section class="answerBoxWrong" role="region">
         <h1 class="response">Oh No!</h1>
-        <img src="https://cdn-images-1.medium.com/max/1600/1*x2Gw1gKrRQi5WEcBrKYA1g.png" alt="Bowser" class="med" />
+        <img src="bowser.png" alt="Bowser" class="med" />
         <p class="fBack"><span>${choice.val()}</span> is incorrect!<br>The correct answer is: <span class="corAns">${STORE[questionNum].correctAnswer}</span></p>
         <button class="nextBtn wrongButton" role="button">Continue</button>
         </section>
@@ -115,7 +115,7 @@ function answerSubmit() {
     e.preventDefault();
     let choice = $('input:checked');
     let userAnswer = choice.val();
-    let correctAnswer = `${STORE[questionNum].correctAnswer}`; 
+    let correctAnswer = `${STORE[questionNum].correctAnswer}`;
     if (userAnswer === correctAnswer) {
       answerCorrect();
     } else {
@@ -130,7 +130,7 @@ function finalScore() {
 if (scoreTotal >= 8){
   $(`.questionBox`).html(resultPageThree());
 } else if (scoreTotal > 3 && scoreTotal < 8){
-  $(`.questionBox`).html(resultPageTwo());  
+  $(`.questionBox`).html(resultPageTwo());
 } else if (scoreTotal <= 3) {
     $(`.questionBox`).html(resultPageOne());
 }
@@ -161,7 +161,7 @@ function resultPageOne() {
         <div class="col-12 finalPageOne">
           <section role="region">
             <h1>Bwah Ha Ha!</h1>
-            <img src="https://img00.deviantart.net/5a51/i/2018/178/d/3/super_smash_bros_ultimate_render__15__bowser_by_falconburst322-dcfnc2z.png" alt="Toad" class="med" />            
+            <img src="bowserFinal.png" alt="Toad" class="med" />
             <h3>Better luck next time!</h3><br>
             <p class="bowserScore">You got ${scoreTotal} out of 10 correct!</p><br>
             <button class="restartBtn bowserBtn" role="button">Try again?</button>
@@ -176,7 +176,7 @@ function resultPageTwo() {
         <div class="col-12 finalPageTwo">
           <section role="region">
             <h1>Thank you Mario!</h1>
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Toad_3D_Land.png/220px-Toad_3D_Land.png" alt="Toad" class="med" />            
+            <img src="toad.png" alt="Toad" class="med" />
             <h3>...but our princess is in another castle.</h3><br>
             <p class="toadScore">You got ${scoreTotal} out of 10 correct!</p><br>
             <button class="restartBtn toadBtn" role="button">Try again?</button>
@@ -190,8 +190,8 @@ function resultPageThree() {
   return `<div class="row">
         <div class="col-12 finalPageThree">
           <section role="region">
-            <h1><img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Sparkling_Pink_Heart_Emoji_large.png?v=1480481032" alt="heart" class="x-sml" />Oh Mario!<img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Sparkling_Pink_Heart_Emoji_large.png?v=1480481032" alt="heart" class="x-sml" /></h1>
-            <img src="https://vignette.wikia.nocookie.net/donkeykong/images/7/74/Princess_peach.png/revision/latest?cb=20160602075029" alt="Toad" class="med" />
+            <h1><img src="heart.png" alt="heart" class="x-sml" />Oh Mario!<img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Sparkling_Pink_Heart_Emoji_large.png?v=1480481032" alt="heart" class="x-sml" /></h1>
+            <img src="peach.png" alt="Toad" class="med" />
             <h3>You're my hero!</h3>
             <p class="peachScore">You got ${scoreTotal} out of 10 correct!</p><br>
             <button class="restartBtn peachBtn" role="button">Try again?</button>
